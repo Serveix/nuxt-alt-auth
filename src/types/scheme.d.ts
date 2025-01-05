@@ -3,7 +3,7 @@ import type { Auth } from '../runtime/core';
 import type { Token, IdToken, RefreshToken, RefreshController, RequestHandler } from '../runtime/inc';
 import type { PartialExcept } from './utils';
 
-export type SchemeNames<N = ''> = 'local' | 'cookie' | 'laravelJWT' | 'openIDConnect' | 'refresh' | 'oauth2' | 'auth0' | N
+export type SchemeNames<N = ''> = 'local' | 'cookie' | 'laravelJWT' | 'openIDConnect' | 'refresh' | 'oauth2' | 'auth0' | `~/${string}` | N
 
 export interface UserOptions {
     property: string | false;
